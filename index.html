@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <title>Tailwind</title>
+  </head>
+  <body class="overflow-x-hidden">
+    <main class="bg-[whitesmoke]">
+      <header
+        class="w-[100vw] h-[10vh] flex items-center justify-center bg-[white]"
+      >
+        <div class="w-[97%] h-[10vh] flex items-center justify-between">
+          <div class="w-[140px] h-[10vh] flex items-center justify-between">
+            <img src="./img/tw-logo.png" alt="" class="w-[30px] h-[25px]" />
+            <p class="text-[30px] font-medium">tailwindcss</p>
+          </div>
+          <div class="w-[450px] h-[10vh] flex items-center justify-between">
+            <nav
+              class="w-[400px] h-[5vh] border-r-[1px] border-[#dfdada] sm:flex items-center justify-around font-medium hidden"
+            >
+              <a
+                href="http://"
+                class="hover:text-[skyblue] duration-200"
+                href=""
+                >Docs</a
+              >
+              <a
+                href="http://"
+                class="hover:text-[skyblue] duration-200"
+                href=""
+                >Components</a
+              >
+              <a
+                href="http://"
+                class="hover:text-[skyblue] duration-200"
+                href=""
+                >Blog</a
+              >
+              <a
+                href="http://"
+                class="hover:text-[skyblue] duration-200"
+                href=""
+                >Showcase</a
+              >
+            </nav>
+            <div
+              class="w-[115px] h-[10vh] sm:flex items-center justify-around hidden text-[20px]"
+            >
+              <a href="http://" class="text-[gray] hover:text-[green]">
+                <i class="bi bi-brightness-high"></i>
+              </a>
+              <a href="http://" class="text-[gray] hover:text-[green]">
+                <i class="bi bi-github"></i>
+              </a>
+            </div>
+          </div>
+          <div
+            class="w-[100px] h-[10vh] flex items-center justify-around sm:hidden text-[20px]"
+          >
+            <a href="http://" class="text-[gray] hover:text-[green]">
+              <i class="bi bi-search"></i>
+            </a>
+            <a href="http://" class="text-[gray] hover:text-[green]">
+              <i class="bi bi-three-dots-vertical"></i>
+            </a>
+          </div>
+        </div>
+      </header>
+      <section class="w-[100vw] h-[90vh] grid place-items-center">
+        <div
+          class="md:w-[75%] w-[90%] h-fit flex items-center justify-between flex-col text-center gap-10 border-[1px] md:border-none sm:border-[red] border-[green] bg-[white] rounded-[20px]"
+        >
+          <div class="w-[100%] h-fit">
+            <h1
+              class="text-slate-950 md:text-[4.5vw] sm:text-[5.5vw] font-bold leading-[60px]"
+            >
+              Rapidly build modern websites without ever leaving your HTML.
+            </h1>
+          </div>
+          <div class="w-[90%] h-fit flex items-end justify-center">
+            <p class="text-[22px]">
+              A utility-first CSS framework packed with classes like
+              <span class="text-[skyblue]"> flex, pt-4, text-center </span> and
+              <span class="text-[skyblue]">rotate-90</span> that can be composed
+              to build any design, directly in your markup.
+            </p>
+          </div>
+          <div
+            class="sm:w-[600px] w-[90vw] h-fit flex items-end justify-between"
+          >
+            <div class="w-[100%] h-[100%] flex items-end justify-between">
+              <button
+                class="sm:w-[20%] w-[100%] h-[50px] bg-slate-950 hover:bg-slate-800 text-white rounded-md"
+              >
+                Get started
+              </button>
+              <div
+                class="w-[75%] h-[100%] sm:flex hidden items-end justify-center"
+              >
+                <div
+                  class="w-[100%] h-[50px] flex items-center justify-between"
+                >
+                  <i class="bi bi-search absolute ml-[20px]"></i>
+                  <input
+                    type="text"
+                    placeholder="Quick search...                                        Ctrl K"
+                    class="w-[100%] h-[50px] rounded-md border-[1px] border-[black] pl-[45px] cursor-pointer"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="w-[100vw] md:h-[100vh] h-[120vh] grid place-items-center">
+        <div
+          class="w-[90%] h-[90%] flex items-center md:justify-between md:flex-row flex-col-reverse"
+        >
+          <div
+            class="md:w-[55%] w-[60%] md:absolute static md:h-[40%] h-[90vh] flex items-center justify-between md:flex-row flex-col rounded-[20px] bg-[white] shadow-2xl md:mt-0 mt-[-20px]"
+          >
+            <div class="w-[30%] h-[100%] ">
+              <img
+                src="./img/sarah-dayan.tw.jpg"
+                alt=""
+                class="md:w-[100%] md:h-[100%] w-[80%] h-[70%] md:rounded-tl-[20px] md:rounded-bl-[20px] rounded-[50%] md:rounded-none"
+              />
+            </div>
+            <div class="w-[70%] h-[100%] grid place-items-center">
+              <div
+                class="w-[90%] h-[90%] flex items-start flex-col justify-around "
+              >
+                <p>
+                  "Tailwind CSS is the only framework that I've seen scale on
+                  large teams. It's easy to customize, adopt to any design, and
+                  the build size is tiny."
+                </p>
+                <small class="text-[skyblue]">Sarah Dayan</small>
+                <small>Staff Engineer, Algolia</small>
+              </div>
+            </div>
+          </div>
+          <div class="md:w-[50%] w-[95%] h-[100%] md:ml-[50vw] ml-0">
+            <img
+              src="./img/tw- img.jpg"
+              alt=""
+              class="w-[100%] h-[100%] rounded-[20px]"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
